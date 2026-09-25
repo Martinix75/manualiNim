@@ -1,0 +1,1 @@
+#----- scrtittura vfat interna ------
