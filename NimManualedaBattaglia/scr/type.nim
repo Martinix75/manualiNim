@@ -4,9 +4,9 @@ type
         colore: string
         peso: int
         
-var frutto1 = Frutta(nome: "Arancia", colore: "arancione")
+var frutto1 = Frutta(nome: "Arancia", colore: "arancione", peso: 100)
 echo frutto1.nome
-echo frutto1
+echo(frutto1)
 
 frutto1.peso = 45
 echo frutto1
