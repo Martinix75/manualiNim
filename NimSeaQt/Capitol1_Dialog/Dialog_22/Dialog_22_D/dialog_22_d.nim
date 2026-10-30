@@ -17,7 +17,7 @@ com_1.addItem("Nim")
 lay_c.addWidget(bot_1, 1 ,0)
 lay_c.addWidget(bot_2, 1 ,1)
 lay_c.addWidget(bot_3, 1 ,3)
-lay_c.addWidget(com_1, 0, 0, 1 ,3)
+lay_c.addWidget(com_1, 0, 0, 1 ,4)
 dwin.setLayout(lay_c)
 
 dwin.resize(300,150)  

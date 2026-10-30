@@ -1,5 +1,5 @@
 import seaqt/[qapplication, qdialog, qboxlayout, qgridlayout, qpushbutton, qlabel, qcombobox, qspinbox, qcheckbox]
-import qtconnect4_3
+import qtconnect
 import std/[strformat]
 
 type

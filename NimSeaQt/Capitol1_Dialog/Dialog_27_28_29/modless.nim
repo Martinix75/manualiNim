@@ -1,6 +1,6 @@
 import std/[tables, strutils]
 import seaqt/[qapplication, qdialog, qgridlayout, qlabel, qlineedit, qspinbox, qcheckbox, qdialogbuttonbox, qpushbutton]
-import qtconnect6_1
+import qtconnect
 type
   Keep* = ref object
     dlg*: QDialog

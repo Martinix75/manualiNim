@@ -1,7 +1,7 @@
 
 import std/[random, tables, math, strutils, algorithm]
 import seaqt/[qapplication, qdialog, qtablewidget, qtablewidgetitem, qpushbutton, qboxlayout, qdialogbuttonbox, qbrush, qcolor]
-import qtconnect6_1
+import qtconnect
 import modal
 import modless
 import live

@@ -19,8 +19,8 @@ let lay_1 = QVBoxLayout.create()
 lay_1.addWidget(dia_1)
 lay_1.addWidget(spi_1)
 
-connect(dia_1, onValueChanged ,diaCambio, cint)
-connect(spi_1, onValueChanged, spiCambio, cint)
+connect(dia_1, onValueChanged ,diaCambio)#, cint)
+connect(spi_1, onValueChanged, spiCambio)#, cint)
 
 dwin.setLayout(lay_1)
 dwin.resize(300,150)
