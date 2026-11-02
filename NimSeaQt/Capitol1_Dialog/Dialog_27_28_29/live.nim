@@ -67,7 +67,7 @@ proc livex*(win: QDialog; tab: Table[string, string]):Keep  {.raises: [].} =
 
     form.dlg.setLayout(form.mlay_1)
     form.dlg.resize(200, 200)
-    form.dlg.setWindowTitle("Modal Win")
+    form.dlg.setWindowTitle("Live Win")
     result = form
 
 proc upDateTab(a: Keep)=

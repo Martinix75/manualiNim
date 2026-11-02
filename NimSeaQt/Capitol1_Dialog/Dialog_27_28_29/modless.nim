@@ -62,7 +62,7 @@ proc modlessx*(win: QDialog; tab: Table[string, string]):Keep  {.raises: [].} =
 
     form.dlg.setLayout(form.mlay_1)
     form.dlg.resize(200, 200)
-    form.dlg.setWindowTitle("Modal Win")
+    form.dlg.setWindowTitle("Modless Win")
     result = form
     
 proc upDateTab(a: Keep)=
