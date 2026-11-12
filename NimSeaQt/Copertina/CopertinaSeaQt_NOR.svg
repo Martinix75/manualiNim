@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 595 842"
+   width="100%"
+   height="100%"
+   version="1.1"
+   id="svg55"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs11">
+    <linearGradient
+       id="linearGradient15">
+      <stop
+         style="stop-color:#4ffd00;stop-opacity:1;"
+         offset="0"
+         id="stop15" />
+      <stop
+         style="stop-color:#36a400;stop-opacity:0.25160062;"
+         offset="1"
+         id="stop16" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient13">
+      <stop
+         style="stop-color:#55d400;stop-opacity:0.9479357;"
+         offset="0"
+         id="stop13" />
+      <stop
+         style="stop-color:#55d400;stop-opacity:0.02514609;"
+         offset="1"
+         id="stop14" />
+    </linearGradient>
+    <!-- Sfondo gradiente scuro professionale -->
+    <linearGradient
+       id="bgGrad"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#0B131E"
+         id="stop1" />
+      <stop
+         offset="60%"
+         stop-color="#111F2E"
+         id="stop2" />
+      <stop
+         offset="100%"
+         stop-color="#091512"
+         id="stop3" />
+    </linearGradient>
+    <!-- Gradiente principale verde Qt -->
+    <linearGradient
+       id="qtGreen"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#41CD52"
+         id="stop4" />
+      <stop
+         offset="100%"
+         stop-color="#1E8E3E"
+         id="stop5" />
+    </linearGradient>
+    <!-- Gradiente luminoso per accenti -->
+    <linearGradient
+       id="qtLightGreen"
+       x1="0%"
+       y1="100%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#21A366"
+         id="stop6" />
+      <stop
+         offset="100%"
+         stop-color="#80E27E"
+         id="stop7" />
+    </linearGradient>
+    <!-- Gradiente traslucido per effetto vetro (Glassmorphism) -->
+    <linearGradient
+       id="glassGrad"
+       x1="-0.75200525"
+       y1="-1.0137526"
+       x2="216.07204"
+       y2="215.8103"
+       gradientTransform="matrix(1.3516139,0,0,1.0027159,68.48018,-7.0354113)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#FFFFFF"
+         stop-opacity="0.12"
+         id="stop8" />
+      <stop
+         offset="100%"
+         stop-color="#FFFFFF"
+         stop-opacity="0.02"
+         id="stop9" />
+    </linearGradient>
+    <!-- Pattern griglia tecnica di sfondo -->
+    <pattern
+       id="techGrid"
+       width="35"
+       height="35"
+       patternUnits="userSpaceOnUse">
+      <path
+         d="M 35 0 L 0 0 0 35"
+         fill="none"
+         stroke="#41CD52"
+         stroke-width="0.5"
+         stroke-opacity="0.08"
+         id="path9" />
+      <circle
+         cx="0"
+         cy="0"
+         r="1"
+         fill="#41CD52"
+         fill-opacity="0.2"
+         id="circle9" />
+    </pattern>
+    <!-- Bagliore morbido -->
+    <radialGradient
+       id="glow"
+       cx="50%"
+       cy="50%"
+       r="50%">
+      <stop
+         offset="0%"
+         stop-color="#41CD52"
+         stop-opacity="0.25"
+         id="stop10" />
+      <stop
+         offset="100%"
+         stop-color="#41CD52"
+         stop-opacity="0"
+         id="stop11" />
+    </radialGradient>
+    <radialGradient
+       xlink:href="#glow"
+       id="radialGradient62"
+       cx="480"
+       cy="180"
+       r="260"
+       fx="480"
+       fy="180"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#qtLightGreen"
+       id="linearGradient71"
+       x1="64.970393"
+       y1="729.99494"
+       x2="153.56638"
+       y2="641.39895"
+       gradientTransform="matrix(1.9709441,0,0,0.68763228,33.194756,-73.542764)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#qtLightGreen"
+       id="linearGradient72"
+       x1="60.484519"
+       y1="1038.7461"
+       x2="137.46482"
+       y2="961.76579"
+       gradientTransform="matrix(2.1171204,0,0,0.64015479,33.194756,-73.542764)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#qtLightGreen"
+       id="linearGradient73"
+       x1="366.16276"
+       y1="578.19161"
+       x2="441.05968"
+       y2="503.29468"
+       gradientTransform="matrix(1.3988643,0,0,0.96884642,33.194756,-73.542764)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#qtLightGreen"
+       id="linearGradient74"
+       x1="331.58283"
+       y1="774.13221"
+       x2="410.53112"
+       y2="695.18391"
+       gradientTransform="matrix(1.4745325,0,0,0.91912841,33.194756,-73.542764)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#qtLightGreen"
+       id="linearGradient75"
+       x1="81.812399"
+       y1="821.73435"
+       x2="394.18701"
+       y2="509.35974"
+       gradientTransform="matrix(1.565203,0,0,0.86588435,33.194756,-73.542764)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#qtGreen"
+       id="linearGradient76"
+       x1="7.3756356"
+       y1="543.95312"
+       x2="25.814724"
+       y2="562.39221"
+       gradientTransform="matrix(5.36632,0,0,0.25255384,68.48018,-7.0354113)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#qtGreen"
+       id="linearGradient77"
+       x1="10.136841"
+       y1="476.28248"
+       x2="23.553249"
+       y2="489.69889"
+       gradientTransform="matrix(3.9045714,0,0,0.34710206,68.48018,-7.0354113)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#qtGreen"
+       id="linearGradient78"
+       x1="132.42445"
+       y1="167.67296"
+       x2="157.16309"
+       y2="192.4116"
+       gradientTransform="matrix(1.5999275,0,0,0.84709134,68.48018,-7.0354113)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#qtGreen"
+       id="linearGradient79"
+       x1="0"
+       y1="0"
+       x2="74.833148"
+       y2="74.833148"
+       gradientTransform="matrix(1.0889329,0,0,1.244599,55.35072,11.028314)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient13"
+       id="linearGradient14"
+       x1="775.87744"
+       y1="319.71973"
+       x2="1180.2671"
+       y2="319.71973"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient15"
+       id="linearGradient16"
+       x1="775.87744"
+       y1="319.71973"
+       x2="1180.2671"
+       y2="319.71973"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- 1. SFONDO BASE -->
+  <rect
+     width="595"
+     height="842"
+     fill="url(#bgGrad)"
+     id="rect11" />
+  <rect
+     width="595"
+     height="842"
+     fill="url(#techGrid)"
+     id="rect12" />
+  <!-- Bagliori ambientali -->
+  <circle
+     cx="480"
+     cy="177.02679"
+     r="260"
+     fill="url(#glow)"
+     id="circle12"
+     style="fill:url(#radialGradient62)" />
+  <circle
+     cx="140"
+     cy="650"
+     r="300"
+     fill="url(#glow)"
+     id="circle13" />
+  <!-- 2. ELEMENTI DECORATIVI SUPERIORI (Lasciano pulita l'area del titolo) -->
+  <g
+     opacity="0.7"
+     id="g15">
+    <!-- Linea di accento laterale stile margine editoriale -->
+    <rect
+       x="45"
+       y="70"
+       width="4"
+       height="140"
+       rx="2"
+       fill="url(#qtGreen)"
+       id="rect13" />
+    <circle
+       cx="47"
+       cy="225"
+       r="3"
+       fill="#41CD52"
+       id="circle14" />
+    <!-- Piccoli dettagli geometrici in alto a destra -->
+    <path
+       d="M 480 60 L 535 60 L 535 115"
+       fill="none"
+       stroke="#41CD52"
+       stroke-width="1.5"
+       stroke-opacity="0.4"
+       id="path14" />
+    <circle
+       cx="535"
+       cy="60"
+       r="3"
+       fill="#41CD52"
+       id="circle15" />
+  </g>
+  <g
+     id="g62"
+     transform="matrix(0.49778427,0.13338089,-0.13338089,0.49778427,-64.443253,90.519947)"
+     style="stroke-width:1.94045">
+    <path
+       d="M 1179.9004,384.00781 V 184.64258 H 842.46094 l -66.2168,66.21679 v 203.9375 h 332.86716 z"
+       style="fill:url(#linearGradient14);fill-opacity:0.748007;stroke-width:0.733399;stroke:url(#linearGradient16);stroke-opacity:1"
+       id="path61" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:0.748007;stroke-width:0.733399"
+       x="878.7915"
+       y="377.37579"
+       id="text56"><tspan
+         id="tspan56"
+         x="878.7915"
+         y="377.37579"
+         style="stroke-width:0.733399">Qt</tspan></text>
+  </g>
+  <!-- 3. ILLUSTRAZIONE CENTRALE/INFERIORE: ARCHITETTURA UI & SIGNALS/SLOTS -->
+  <g
+     transform="matrix(0.85901926,0,0,0.85894737,-28.514935,123.16936)"
+     id="g52"
+     style="stroke-width:1.16417">
+    <!-- Cerchi concentrici radar / sistema -->
+    <circle
+       cx="310"
+       cy="490"
+       r="190"
+       fill="none"
+       stroke="#41cd52"
+       stroke-width="1.16417"
+       stroke-dasharray="6, 6"
+       stroke-opacity="0.25"
+       id="circle16" />
+    <circle
+       cx="310"
+       cy="490"
+       r="140"
+       fill="none"
+       stroke="#80e27e"
+       stroke-width="0.931334"
+       stroke-opacity="0.2"
+       id="circle17" />
+    <!-- Connessioni nodali (Concetto Signals & Slots) -->
+    <g
+       stroke="url(#qtLightGreen)"
+       stroke-width="2.32833"
+       fill="none"
+       stroke-opacity="0.6"
+       id="g20"
+       style="stroke:url(#linearGradient75)">
+      <path
+         d="m 110,430 c 70,0 80,-50 150,-50"
+         id="path17"
+         style="stroke:url(#linearGradient71);stroke-width:2.32833" />
+      <path
+         d="m 110,530 c 60,0 70,40 140,40"
+         id="path18"
+         style="stroke:url(#linearGradient72);stroke-width:2.32833" />
+      <path
+         d="m 440,420 c 50,0 50,60 90,60"
+         id="path19"
+         style="stroke:url(#linearGradient73);stroke-width:2.32833" />
+      <path
+         d="m 420,550 c 50,0 60,60 100,60"
+         id="path20"
+         style="stroke:url(#linearGradient74);stroke-width:2.32833" />
+    </g>
+    <!-- Nodi attivi sui tracciati -->
+    <g
+       fill="#0b131e"
+       stroke="#41cd52"
+       stroke-width="2.91042"
+       id="g23">
+      <circle
+         cx="110"
+         cy="430"
+         r="6"
+         id="circle20"
+         style="stroke-width:2.91042" />
+      <circle
+         cx="110"
+         cy="530"
+         r="6"
+         id="circle21"
+         style="stroke-width:2.91042" />
+      <circle
+         cx="530"
+         cy="480"
+         r="6"
+         id="circle22"
+         style="stroke-width:2.91042" />
+      <circle
+         cx="520"
+         cy="610"
+         r="6"
+         id="circle23"
+         style="stroke-width:2.91042" />
+    </g>
+    <circle
+       cx="110"
+       cy="430"
+       r="2.5"
+       fill="#80e27e"
+       id="circle24"
+       style="stroke-width:1.35528" />
+    <circle
+       cx="530"
+       cy="480"
+       r="2.5"
+       fill="#80e27e"
+       id="circle25"
+       style="stroke-width:1.35528" />
+    <!-- Finestra/Pannello 1 (Livello posteriore - Codice/Logica) -->
+    <g
+       transform="rotate(-6,3416.6989,-1303.7881)"
+       id="g35"
+       style="stroke-width:1.16417">
+      <rect
+         x="0"
+         y="0"
+         width="240"
+         height="170"
+         rx="13.969419"
+         fill="#132436"
+         stroke="#2d4a63"
+         stroke-width="1.74625"
+         id="rect25"
+         ry="13.970589" />
+      <!-- Barra superiore finestra -->
+      <path
+         d="M 0,12 Q 0,0 12,0 h 216 q 12,0 12,12 V 26 H 0 Z"
+         fill="#1b324a"
+         id="path25"
+         style="stroke-width:1.16417" />
+      <circle
+         cx="16"
+         cy="13"
+         r="3.5"
+         fill="#41cd52"
+         opacity="0.8"
+         id="circle26"
+         style="stroke-width:1.16417" />
+      <circle
+         cx="28"
+         cy="13"
+         r="3.5"
+         fill="#80e27e"
+         opacity="0.5"
+         id="circle27"
+         style="stroke-width:1.16417" />
+      <circle
+         cx="40"
+         cy="13"
+         r="3.5"
+         fill="#ffffff"
+         opacity="0.2"
+         id="circle28"
+         style="stroke-width:1.16417" />
+      <!-- Linee astratte di codice -->
+      <rect
+         x="20"
+         y="45"
+         width="75"
+         height="6"
+         rx="3.4923549"
+         fill="#41cd52"
+         opacity="0.7"
+         id="rect28"
+         style="stroke-width:1.16417"
+         ry="3.4926472" />
+      <rect
+         x="105"
+         y="45"
+         width="45"
+         height="6"
+         rx="3.4923549"
+         fill="#5c85a6"
+         opacity="0.5"
+         id="rect29"
+         style="stroke-width:1.16417"
+         ry="3.4926472" />
+      <rect
+         x="35"
+         y="63"
+         width="110"
+         height="6"
+         rx="3.4923549"
+         fill="#80e27e"
+         opacity="0.4"
+         id="rect30"
+         style="stroke-width:1.16417"
+         ry="3.4926472" />
+      <rect
+         x="35"
+         y="81"
+         width="85"
+         height="6"
+         rx="3.4923549"
+         fill="#5c85a6"
+         opacity="0.5"
+         id="rect31"
+         style="stroke-width:1.16417"
+         ry="3.4926472" />
+      <rect
+         x="130"
+         y="81"
+         width="60"
+         height="6"
+         rx="3.4923549"
+         fill="#41cd52"
+         opacity="0.6"
+         id="rect32"
+         style="stroke-width:1.16417"
+         ry="3.4926472" />
+      <rect
+         x="20"
+         y="99"
+         width="50"
+         height="6"
+         rx="3.4923549"
+         fill="#5c85a6"
+         opacity="0.4"
+         id="rect33"
+         style="stroke-width:1.16417"
+         ry="3.4926472" />
+      <rect
+         x="35"
+         y="117"
+         width="130"
+         height="6"
+         rx="3.4923549"
+         fill="#80e27e"
+         opacity="0.3"
+         id="rect34"
+         style="stroke-width:1.16417"
+         ry="3.4926472" />
+      <rect
+         x="20"
+         y="135"
+         width="40"
+         height="6"
+         rx="3.4923549"
+         fill="#41cd52"
+         opacity="0.7"
+         id="rect35"
+         style="stroke-width:1.16417"
+         ry="3.4926472" />
+    </g>
+    <!-- Finestra/Pannello 2 (Livello centrale - Effetto Vetro UI) -->
+    <g
+       transform="translate(215,405)"
+       id="g50"
+       style="stroke-width:1.16417">
+      <rect
+         x="0"
+         y="0"
+         width="250"
+         height="185"
+         rx="16.297655"
+         fill="url(#glassGrad)"
+         stroke="#41cd52"
+         stroke-width="1.74625"
+         stroke-opacity="0.6"
+         id="rect36"
+         style="fill:url(#glassGrad)"
+         ry="16.299019" />
+      <!-- Elementi UI interni (Widget, Slider, Grafici) -->
+      <!-- Card sinistra -->
+      <rect
+         x="18"
+         y="20"
+         width="95"
+         height="65"
+         rx="9.3129463"
+         fill="#0b131e"
+         fill-opacity="0.5"
+         stroke="#41cd52"
+         stroke-width="1.16417"
+         stroke-opacity="0.3"
+         id="rect37"
+         ry="9.3137255" />
+      <circle
+         cx="42"
+         cy="45"
+         r="12"
+         fill="none"
+         stroke="#41cd52"
+         stroke-width="3.4925"
+         stroke-dasharray="55, 20"
+         id="circle37" />
+      <rect
+         x="64"
+         y="38"
+         width="35"
+         height="5"
+         rx="2.9102957"
+         fill="#ffffff"
+         opacity="0.6"
+         id="rect38"
+         style="stroke-width:1.16417"
+         ry="2.9105392" />
+      <rect
+         x="64"
+         y="48"
+         width="25"
+         height="4"
+         rx="2.3282366"
+         fill="#80e27e"
+         opacity="0.5"
+         id="rect39"
+         style="stroke-width:1.16417"
+         ry="2.3284314" />
+      <!-- Card destra (Grafico a barre) -->
+      <rect
+         x="125"
+         y="20"
+         width="107"
+         height="65"
+         rx="9.3129463"
+         fill="#0b131e"
+         fill-opacity="0.5"
+         stroke="#41cd52"
+         stroke-width="1.16417"
+         stroke-opacity="0.3"
+         id="rect40"
+         ry="9.3137255" />
+      <rect
+         x="142"
+         y="55"
+         width="10"
+         height="18"
+         rx="2.3282366"
+         fill="#21a366"
+         id="rect41"
+         style="stroke-width:1.16417"
+         ry="2.3284314" />
+      <rect
+         x="160"
+         y="42"
+         width="10"
+         height="31"
+         rx="2.3282366"
+         fill="#41cd52"
+         id="rect42"
+         style="stroke-width:1.16417"
+         ry="2.3284314" />
+      <rect
+         x="178"
+         y="33"
+         width="10"
+         height="40"
+         rx="2.3282366"
+         fill="#80e27e"
+         id="rect43"
+         style="stroke-width:1.16417"
+         ry="2.3284314" />
+      <rect
+         x="196"
+         y="48"
+         width="10"
+         height="25"
+         rx="2.3282366"
+         fill="#41cd52"
+         id="rect44"
+         style="stroke-width:1.16417"
+         ry="2.3284314" />
+      <!-- Controlli interattivi inferiori (Sliders & Toggle) -->
+      <rect
+         x="18"
+         y="100"
+         width="214"
+         height="65"
+         rx="9.3129463"
+         fill="#0b131e"
+         fill-opacity="0.5"
+         id="rect45"
+         style="stroke-width:1.16417"
+         ry="9.3137255" />
+      <!-- Slider 1 -->
+      <rect
+         x="34"
+         y="118"
+         width="130"
+         height="4"
+         rx="2.3282366"
+         fill="#2d4a63"
+         id="rect46"
+         style="stroke-width:1.16417"
+         ry="2.3284314" />
+      <rect
+         x="34"
+         y="118"
+         width="85"
+         height="4"
+         rx="2.3282366"
+         fill="url(#qtGreen)"
+         id="rect47"
+         style="fill:url(#linearGradient76);stroke-width:1.16417"
+         ry="2.3284314" />
+      <circle
+         cx="119"
+         cy="120"
+         r="6"
+         fill="#ffffff"
+         stroke="#41cd52"
+         stroke-width="2.32833"
+         id="circle47" />
+      <!-- Slider 2 -->
+      <rect
+         x="34"
+         y="142"
+         width="130"
+         height="4"
+         rx="2.3282366"
+         fill="#2d4a63"
+         id="rect48"
+         style="stroke-width:1.16417"
+         ry="2.3284314" />
+      <rect
+         x="34"
+         y="142"
+         width="45"
+         height="4"
+         rx="2.3282366"
+         fill="url(#qtGreen)"
+         id="rect49"
+         style="fill:url(#linearGradient77);stroke-width:1.16417"
+         ry="2.3284314" />
+      <circle
+         cx="79"
+         cy="144"
+         r="6"
+         fill="#ffffff"
+         stroke="#41cd52"
+         stroke-width="2.32833"
+         id="circle49" />
+      <!-- Toggle Switch attivo -->
+      <rect
+         x="182"
+         y="122"
+         width="34"
+         height="18"
+         rx="10.477064"
+         fill="url(#qtGreen)"
+         id="rect50"
+         style="fill:url(#linearGradient78);stroke-width:1.16417"
+         ry="10.477942" />
+      <circle
+         cx="207"
+         cy="131"
+         r="6.5"
+         fill="#ffffff"
+         id="circle50"
+         style="stroke-width:1.16417" />
+    </g>
+    <!-- Elemento flottante in primo piano (Badge/Poligono stile Qt) -->
+    <g
+       transform="translate(135,515)"
+       id="g51"
+       style="stroke-width:1.16417">
+      <!-- Forma esagonale/smussata tipica dei badge Qt -->
+      <polygon
+         points="0,20 35,0 70,20 70,60 35,80 0,60 "
+         fill="url(#qtGreen)"
+         id="polygon50"
+         style="fill:url(#linearGradient79);stroke-width:1.16417" />
+      <polygon
+         points="6,23 35,6 64,23 64,57 35,74 6,57 "
+         fill="none"
+         stroke="#ffffff"
+         stroke-width="1.16417"
+         stroke-opacity="0.4"
+         id="polygon51" />
+      <!-- Simbolo astratto di connessione / play / nodo al centro -->
+      <path
+         d="M 27,28 47,40 27,52 Z"
+         fill="#0b131e"
+         id="path51"
+         style="stroke-width:1.16417" />
+    </g>
+  </g>
+  <!-- 4. FASCIA GEOMETRICA INFERIORE -->
+  <g
+     transform="translate(0, 740)"
+     id="g55">
+    <path
+       d="M 0 102 L 0 40 L 180 40 L 210 15 L 595 15 L 595 102 Z"
+       fill="#070D14"
+       id="path52" />
+    <path
+       d="M 0 40 L 180 40 L 210 15 L 595 15"
+       fill="none"
+       stroke="url(#qtGreen)"
+       stroke-width="2.5"
+       id="path53" />
+    <!-- Dettagli decorativi sul footer -->
+    <rect
+       x="45"
+       y="65"
+       width="40"
+       height="4"
+       rx="2"
+       fill="#41CD52"
+       id="rect53" />
+    <rect
+       x="93"
+       y="65"
+       width="12"
+       height="4"
+       rx="2"
+       fill="#41CD52"
+       opacity="0.5"
+       id="rect54" />
+    <rect
+       x="113"
+       y="65"
+       width="6"
+       height="4"
+       rx="2"
+       fill="#41CD52"
+       opacity="0.3"
+       id="rect55" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#99ff55;fill-opacity:0.748007;stroke-width:0.377953"
+     x="70.891968"
+     y="145.68695"
+     id="text79"><tspan
+       id="tspan79"
+       x="70.891968"
+       y="145.68695">Nim Sea Qt</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.9853px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#99ff55;fill-opacity:0.748007;stroke-width:0.377953"
+     x="80.351501"
+     y="192.5571"
+     id="text80"
+     transform="scale(0.9721919,1.0286035)"><tspan
+       id="tspan80"
+       x="80.351501"
+       y="192.5571"
+       style="stroke-width:0.377953">Creazione di Interfacce Grafiche con Qt</tspan></text>
+  <g
+     id="layer1"
+     style="display:none">
+    <path
+       style="fill:#ff0000;fill-opacity:0.748007;stroke:#ff0000;stroke-width:0.377953"
+       d="M 79.720776,0 V 311.67665"
+       id="path80" />
+    <path
+       style="fill:#ff0000;fill-opacity:0.748007;stroke:#ff0000;stroke-width:0.377953"
+       d="M 515.27922,0 V 311.67665"
+       id="path81" />
+  </g>
+</svg>
