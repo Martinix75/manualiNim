@@ -14,7 +14,7 @@ type
     formati: Table[string, string] = {"separatore": "'", "decimali": ".","numDec": "3", "redNeg": "checked"}.toTable
     xMax: cint = 7
     yMax: cint = 10
-    items: seq[QTableWidgetItem] #crea un dizionario che matenga i dati anvche dopo la distruzione della prc da gc.
+    #items: seq[QTableWidgetItem] #crea un dizionario che matenga i dati anvche dopo la distruzione della prc da gc.
 
 proc aggiornaTabella(xz: Form) {.raises: [].} #aggiorna i dati della tabella
 proc creaNumeriTabella(vj: Form) #crea i numri da mettre in tabella rnd
@@ -91,11 +91,14 @@ proc aggiornatabella(xz: Form) =
         let invertStr = reversed(strTemp) #inverti la stringa (è memorizzata al contrario (forma uan lista di caratteri.
         let interoJStr = join(invertStr,"") #unisci tutto in uan stringa unica.
         let strFinale = segno & interoJStr & $xz.formati["decimali"] & splitNum[1] #costruisci la stringa finale con gli elemeti calcolati.
-        let item = QTableWidgetItem.create(strFinale) #metila negli item della tabella.
+        var item = QTableWidgetItem.create(strFinale) #metila negli item della tabella.
+        #let item = QTableWidgetItem.create(strFinale) #metila negli item della tabella.
         if segno == "-" and xz.formati["redNeg"] == "checked": #se è un numero negativo sfrivlo in rosso
           item.setForeground(QBrush.create(QColor.create(r=255.cint, g=15.cint, b=15.cint))) #cambia il colore del testo in rosso
+
+        item.owned = false
         xz.dtab_1.setItem(x.cint, y.cint, item) #scrive l'item nella tabella'
-        xz.items.add(item) #aggiunge l'item alla sequanza che rimane sempre viva e visibile.
+        #xz.items.add(item) #aggiunge l'item alla sequanza che rimane sempre viva e visibile.
         contatore = 0
         strTemp=""
       except KeyError:
@@ -122,9 +125,9 @@ proc modless(le: Form) =
   echo("Modless Call..")
   let jk = modlessx(le.dwin, le.formati)
   echo("Modles Proc dialog: ", le.formati)
-  jk.onDataCh = proc() =
+  jk.onDataCh = proc(k: ModlessForm) =
                   echo("Test")
-                  le.formati = jk.tabx
+                  le.formati = k.tabx
                   le.aggiornaTabella()
   jk.dlg.show()
   
@@ -132,8 +135,8 @@ proc live(li: Form) =
   echo("Live...")
   let jk = livex(li.dwin, li.formati)
   echo("Live Proc dialog: ", li.formati)
-  jk.onDataCh = proc() =
+  jk.onDataCh = proc(k: LiveForm) =
                   echo("Test")
-                  li.formati = jk.tabx
+                  li.formati = k.tabx
                   li.aggiornaTabella()
   jk.dlg.show()

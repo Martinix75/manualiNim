@@ -2,7 +2,7 @@ import std/[tables, strutils]
 import seaqt/[qapplication, qdialog, qgridlayout, qlabel, qlineedit, qspinbox, qcheckbox, qdialogbuttonbox, qpushbutton]
 import qtconnect
 type
-  Keep* = ref object
+  ModlessForm* = ref object
     dlg*: QDialog
     mlab_1, mlab_2, mlab_3: Qlabel
     mqle_1, mqle_2: QLineEdit
@@ -12,13 +12,13 @@ type
     tabx*: Table[string, string]
     mlay_1: QGridLayout
     ok: QPushButton
-    onDataCh*: proc() {.closure.} #funzione acessibile dalla madrea per poter fare "cose".
+    onDataCh*: proc(k: ModlessForm) #{.closure.} #funzione acessibile dalla madrea per poter fare "cose".
 
-proc upDateTab(a: Keep) {.raises: [].}
+proc upDateTab(a: ModlessForm) {.raises: [].}
 
-proc modlessx*(win: QDialog; tab: Table[string, string]):Keep  {.raises: [].} =
+proc modlessx*(win: QDialog; tab: Table[string, string]):ModlessForm  {.raises: [].} =
     echo("Modal Win")
-    let form = Keep()
+    let form = ModlessForm()
     form.mlay_1 = QGridLayout.create()
     form.dlg = QDialog.create(win)
     form.mlab_1 = QLabel.create("Imposta Separatore Migliaia")
@@ -65,7 +65,7 @@ proc modlessx*(win: QDialog; tab: Table[string, string]):Keep  {.raises: [].} =
     form.dlg.setWindowTitle("Modless Win")
     result = form
     
-proc upDateTab(a: Keep)=
+proc upDateTab(a: ModlessForm)=
   echo("Ritorno....")
   let chk = if a.mqcb_1.isChecked == true: "checked" else: "unchecked"
   a.tabx["separatore"] = a.mqle_1.text()
@@ -74,7 +74,7 @@ proc upDateTab(a: Keep)=
   a.tabx["redNeg"] = chk
   echo("ris --> ", a.tabx)
   try:
-    a.onDataCh() #chiama questa funzione sulla madre paer aggiornare i dati in tabella
+    if a.onDataCh != nil: a.onDataCh(a) #chiama questa funzione sulla madre paer aggiornare i dati in tabella
   except Exception:
     discard
 

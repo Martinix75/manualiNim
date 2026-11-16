@@ -3,7 +3,7 @@ import seaqt/[qapplication, qdialog, qgridlayout, qlabel, qlineedit, qspinbox, q
 import qtconnect
 
 type
-  Keep* = ref object
+  LiveForm* = ref object
     dlg*: QDialog
     mlab_1, mlab_2, mlab_3: Qlabel
     mqle_1, mqle_2: QLineEdit
@@ -13,13 +13,13 @@ type
     tabx*: Table[string, string]
     mlay_1: QGridLayout
     #ok: QPushButton
-    onDataCh*: proc() {.closure.} #funzione acessibile dalla madrea per poter fare "cose".
+    onDataCh*: proc(k: LiveForm) #{.closure.} #funzione acessibile dalla madrea per poter fare "cose".
 
-proc upDateTab(a: Keep) {.raises: [].}
+proc upDateTab(a: LiveForm) {.raises: [].}
 
-proc livex*(win: QDialog; tab: Table[string, string]):Keep  {.raises: [].} =
+proc livex*(win: QDialog; tab: Table[string, string]):LiveForm  {.raises: [].} =
     echo("Modal Win")
-    let form = Keep()
+    let form = LiveForm()
     form.mlay_1 = QGridLayout.create()
     form.dlg = Qdialog.create(win)
     form.mlab_1 = QLabel.create("Imposta Separatore Migliaia")
@@ -70,7 +70,7 @@ proc livex*(win: QDialog; tab: Table[string, string]):Keep  {.raises: [].} =
     form.dlg.setWindowTitle("Live Win")
     result = form
 
-proc upDateTab(a: Keep)=
+proc upDateTab(a: LiveForm)=
   echo("Ritorno....")
   let chk = if a.mqcb_1.isChecked == true: "checked" else: "unchecked"
   a.tabx["separatore"] = a.mqle_1.text()
@@ -79,7 +79,7 @@ proc upDateTab(a: Keep)=
   a.tabx["redNeg"] = chk
   echo("ris --> ", a.tabx)
   try:
-    a.onDataCh() #chiama questa funzione sulla madre paer aggiornare i dati in tabella
+    if a.onDataCh != nil: a.onDataCh(a) #chiama questa funzione sulla madre paer aggiornare i dati in tabella
   except Exception:
     discard
     

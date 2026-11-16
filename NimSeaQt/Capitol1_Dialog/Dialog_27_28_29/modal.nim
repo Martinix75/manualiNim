@@ -3,7 +3,7 @@ import seaqt/[qdialog, qgridlayout, qlabel, qlineedit, qspinbox, qcheckbox, qdia
 import qtconnect
 
 type
-  Keep* = ref object
+  ModlaForm* = ref object
     dlg*: QDialog
     mlab_1, mlab_2, mlab_3: Qlabel
     mqle_1, mqle_2: QLineEdit
@@ -15,13 +15,13 @@ type
     #ok: QPushButton
     #onDataCh*: proc() {.closure.} #funzione acessibile dalla madrea per poter fare "cose".
 
-proc upDateTab(a: Keep) {.raises: [].}
+proc upDateTab(a: ModlaForm) {.raises: [].}
 
-proc modalx*(win: QDialog; tab: Table[string, string] ): Keep {.raises: [].} =
+proc modalx*(win: QDialog; tab: Table[string, string] ): ModlaForm {.raises: [].} =
     echo("Modal Win")
     #var tabx = tab
     let
-        form = Keep()
+        form = ModlaForm()
         #mwin = QDialog.create()
         #mlay_1 = QGridLayout.create()
         #mlab_1 = QLabel.create("Imposta Separatore Migliaia")
@@ -89,7 +89,7 @@ proc modalx*(win: QDialog; tab: Table[string, string] ): Keep {.raises: [].} =
         form.tabx["redNeg"] = chk
         result = form ]#
 
-proc upDateTab(a: Keep) =
+proc upDateTab(a: ModlaForm) =
     echo("Aggiorno Dati..")
     let chk = if a.mqcb_1.isChecked == true: "checked" else: "unchecked"
     a.tabx["separatore"] = a.mqle_1.text()
