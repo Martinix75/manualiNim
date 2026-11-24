@@ -1,0 +1,21 @@
+(.nif27)
+(.vendor "Nifler")
+(.dialect "nim-parsed")
+(stmts@,1,dialog_21.nim
+ (import
+  (infix@C / seaqt~5
+   (bracket@1 qapplication@1 qdialog@F)))
+ (discard@,2
+  (call@R
+   (dot~7 QApplication~C create@1)))
+ (let@2,5 dwin . . .
+  (call@L
+   (dot~7 QDialog~7 create@1)))
+ (call@B,7
+  (dot~7 dwin~4 resize@1)300@1 150@5)
+ (call@9,8
+  (dot~5 dwin~4 show@1))
+ (cmd@,9 quit
+  (dot@O
+   (call~2
+    (dot~5 QApplication~C exec@1))int@1)))

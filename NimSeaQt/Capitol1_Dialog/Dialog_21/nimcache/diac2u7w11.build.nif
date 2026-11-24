@@ -1,0 +1,14 @@
+(.nif27)
+(stmts
+ (cmd :nifler "/home/andrea/Scaricati/nimony/bin/nifler2" "--portablePaths" "--deps" "parse"(input)(output))
+ (cmd :nimsem "/home/andrea/Scaricati/nimony/bin/nimsem" "--base\3A." "--define\3AnimNativeAlloc" "--nimcache\3Animcache" "--stdcache\3A/home/andrea/.cache/nimony/stdlib/2vl8fr1/bin/laywfk" "--optionkey\3AAFDAA66A71115EA29948A0E3A3D327162A8EAF17" "m"(args))
+ (do nimsem
+  (args "--isMain" "nimcache/diac2u7w11.p.nif")
+  (input "nimcache/diac2u7w11.p.nif")
+  (input "/home/andrea/.cache/nimony/stdlib/2vl8fr1/bin/laywfk/sysvq0asl.s.idx.nif")
+  (output "nimcache/diac2u7w11.s.nif")
+  (output "nimcache/diac2u7w11.s.idx.nif")
+  (output "nimcache/diac2u7w11.s.deps.nif"))
+ (do nifler
+  (input "dialog_21.nim")
+  (output "nimcache/diac2u7w11.p.nif")))
