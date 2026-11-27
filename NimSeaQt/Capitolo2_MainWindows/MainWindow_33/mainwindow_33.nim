@@ -109,4 +109,4 @@ proc info(c: Form) =
 proc config(c: Form) =
   echo("configurazione..")
   let testo = "Seriale Non Trovata\nConnetti un dispositivo."
-  discard QMessageBox.information(c.mwin, "Info Seriale", testo, 0x40)
+  discard QMessageBox.information(c.mwin, "Info Seriale", testo, 0x400)
